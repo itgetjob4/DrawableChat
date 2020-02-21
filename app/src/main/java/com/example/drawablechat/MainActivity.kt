@@ -10,18 +10,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.effectlib.Config
 import com.example.effectlib.GradientDrawable
 import com.example.effectlib.MyDecoration
+import com.example.effectlib.ViewType
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
 
-    companion object{
-
-        var me=0
-        var you=1
-
-    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,10 +39,10 @@ class MainActivity : AppCompatActivity() {
         for (i in 0..49) {
             if (i%3==0 || i%5==1 || i%7==0){
 
-                myList.add(MyModel(UUID.randomUUID().toString(),0))
+                myList.add(MyModel(UUID.randomUUID().toString(),ViewType.LEFT))
             }else{
 
-                myList.add(MyModel(UUID.randomUUID().toString(),1))
+                myList.add(MyModel(UUID.randomUUID().toString(),ViewType.RIGHT))
             }
         }
 
@@ -58,18 +53,13 @@ class MainActivity : AppCompatActivity() {
     fun setDecorations(){
         val r = resources
         val config = Config(
-            r.getDimensionPixelSize(R.dimen.message_grouped_vertical_padding),
-            r.getDimensionPixelSize(R.dimen.message_regular_vertical_padding),
-            r.getDimensionPixelSize(R.dimen.message_grouped_corner_radius),
-            r.getDimensionPixelSize(R.dimen.message_regular_corner_radius),
-            ContextCompat.getDrawable(this@MainActivity,R.drawable.crop)!!,    // Me       //  ColorDrawable(r.getColor(R.color.message_me_background)),
-            GradientDrawable(r.getIntArray(R.array.list_gradient_color))               //You
+            ContextCompat.getDrawable(this@MainActivity,R.drawable.crop)!!,      //  ColorDrawable(r.getColor(R.color.message_me_background)),
+            GradientDrawable(r.getIntArray(R.array.list_gradient_color))
         )
 
 
-        myRecycler.addItemDecoration(
-            MyDecoration(config, me, you,true)
-        )
+
+        myRecycler.addItemDecoration(MyDecoration(config, ViewType.LEFT,ViewType.RIGHT ,true))
     }
 
 
