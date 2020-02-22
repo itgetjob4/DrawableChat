@@ -9,4 +9,6 @@ this Blog.</a>
 <video controls="true" loop="" poster="https://noties.io/assets/images/gradient-messenger-round-2.png">
           <source src="https://noties.io/assets/video/gradient-messenger-round-2.mp4" type="video/mp4"> You browser does not support mp4 playback, try downloading video file <a href="https://noties.io/assets/video/gradient-messenger-round-2.mp4">directly</a>
         </video>
+        
+<img src="https://noties.io/assets/images/gradient-messenger-round-2.png">
 
