@@ -6,9 +6,10 @@ this Blog.</a>
 
 <h1>The video src attribute</h1>
 
-<video controls="true" loop="" poster="https://noties.io/assets/images/gradient-messenger-round-2.png">
-          <source src="https://noties.io/assets/video/gradient-messenger-round-2.mp4" type="video/mp4"> You browser does not support mp4 playback, try downloading video file <a href="https://noties.io/assets/video/gradient-messenger-round-2.mp4">directly</a>
-        </video>
+<video width="400" controls>
+  <source src="https://noties.io/assets/video/gradient-messenger-round-2.mp4" type="video/mp4">
+
+</video>
         
 <img src="https://noties.io/assets/images/gradient-messenger-round-2.png">
 
