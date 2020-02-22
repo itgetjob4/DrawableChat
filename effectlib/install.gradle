@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.intellisense.drawchat' // CREATE A GROUP ID FOR YOUR LIBRARY
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.intellisense.drawchat' // CREATE A GROUP ID FOR YOUR LIBRARY
+                artifactId 'effectlib' // THE NAME OF YOUR MODULE
+
+                name 'Drawchat' // YOUR LIBRARY NAME
+                description 'To create drawable chat' // YOUR LIBRARY DESCRIPTION
+                url 'https://github.com/itgetjob4' // YOUR SITE
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'itgetjob4' //YOUR ID
+                        name 'intelli sense' //YOUR NAME
+                        email 'itgetjobs4@gmail.com' //YOUR EMAIL
+                    }
+                }
+                scm {
+                    connection 'https://github.com/itgetjob4/DrawableChat.git' // YOUR GIT REPO
+                    developerConnection 'https://github.com/itgetjob4/DrawableChat.git' // YOUR GIT REPO
+                    url 'https://github.com/itgetjob4' // YOUR SITE
+
+                }
+            }
+        }
+    }
+}
