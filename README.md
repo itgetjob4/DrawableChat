@@ -6,7 +6,7 @@ This library is used to make chat effect like facebook and instagram,it can give
         
 <img src="https://noties.io/assets/images/gradient-messenger-round-2.png" width="400">
 
-<h4>To include:</h4>
+<h3>To include:</h3>
 
 implementation 'com.intellisense.drawchat:effectlib:1.0'
 
