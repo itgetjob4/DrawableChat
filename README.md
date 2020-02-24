@@ -28,7 +28,7 @@ This library is used to make chat effect like facebook and instagram,it can give
             get() =  text
     }
     
- <h3>4. Implement override methods and pass your layouts accordingly</h3>
+ <h3>4. Use override methods and pass your layouts accordingly</h3>
     
     
       override fun onCreateLeftViewHolder(inflater: LayoutInflater, parent: ViewGroup): ViewHolder {
