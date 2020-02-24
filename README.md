@@ -4,5 +4,5 @@ this Blog.</a>
 
 <h2>Have a look to the demonstration</h2>
         
-<img src="https://noties.io/assets/images/gradient-messenger-round-2.png" width="500">
+<img src="https://noties.io/assets/images/gradient-messenger-round-2.png" width="100">
 
