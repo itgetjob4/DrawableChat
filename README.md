@@ -18,10 +18,10 @@ This library is used to make chat effect like facebook and instagram,it can give
 <h3>3. Implement DecViewHolder to your viewholder class</h3>
 </br>
 </br>
-
-
   class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView), DecViewHolder { 
+  
         var text: TextView
+        
         init {
             text=itemView.findViewById(R.id.text)
         }
