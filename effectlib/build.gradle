@@ -37,8 +37,8 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 }
 
-//apply from: 'install.gradle'
-//apply from: 'bintray.gradle'
+apply from: 'install.gradle'
+apply from: 'bintray.gradle'
 
 
 

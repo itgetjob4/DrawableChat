@@ -13,11 +13,6 @@ import com.example.effectlib.ViewType
 
 class MyAdapter(var list:ArrayList<MyModel>) : DecorationAdapter<MyAdapter.ViewHolder>() {
 
-
-    override fun getDecorationViewType(position: Int): ViewType {
-        return list[position].viewType
-    }
-
     override fun onCreateLeftViewHolder(inflater: LayoutInflater, parent: ViewGroup): ViewHolder {
         return ViewHolder(inflater.inflate(R.layout.item_me,parent,false))
     }
@@ -28,18 +23,23 @@ class MyAdapter(var list:ArrayList<MyModel>) : DecorationAdapter<MyAdapter.ViewH
     }
 
 
+    override fun getDecorationViewType(position: Int): ViewType {   // return the type of layout you want left or right
+        return list[position].viewType
+    }
+
+
     override fun getItemCount(): Int {
         return list.size
     }
 
-    override fun onBindViewHolder(holder: MyAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
             holder.text.text=list.get(position).message
 
     }
 
 
-    class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView), DecViewHolder {
+    class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView), DecViewHolder {  // one can also create seperate viewholders for different views
 
         var text: TextView
 

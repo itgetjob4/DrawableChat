@@ -36,17 +36,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun myListItems():ArrayList<MyModel>{
         var myList=ArrayList<MyModel>()
-        for (i in 0..49) {
-            if (i%3==0 || i%5==1 || i%7==0){
-
-                myList.add(MyModel(UUID.randomUUID().toString(),ViewType.LEFT))
-            }else{
-
-                myList.add(MyModel(UUID.randomUUID().toString(),ViewType.RIGHT))
-            }
+        val fakeMessage = FakeMessage(Random(50L))  // Fake message class is just creating fake messages in real app it would not be required
+        for (i in 1..50){
+            myList.add(fakeMessage.create())
         }
 
         return myList
+
     }
 
 
@@ -60,6 +56,7 @@ class MainActivity : AppCompatActivity() {
 
 
         myRecycler.addItemDecoration(MyDecoration(config, ViewType.LEFT,ViewType.RIGHT ,true))
+
     }
 
 
