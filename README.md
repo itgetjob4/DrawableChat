@@ -6,7 +6,11 @@ This library is used to make chat effect like facebook and instagram,it can give
         
 <img src="https://noties.io/assets/images/gradient-messenger-round-2.png" width="400">
 
-<h2>Steps to use</h2>
+<h1>To include:</h1>
+
+implementation 'com.intellisense.drawchat:effectlib:1.0'
+
+<h2>Steps to use:</h2>
 
 <h3>1. Create config object</h3>
   val config = Config(ContextCompat.getDrawable(this@MainActivity,R.drawable.crop)!!,      
