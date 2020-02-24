@@ -4,12 +4,7 @@ this Blog.</a>
 
 <h2>Have a look to the demonstration</h2>
 
-<h1>The video src attribute</h1>
-
-<video width="400" controls>
-  <source src="https://noties.io/assets/video/gradient-messenger-round-2.mp4" type="video/mp4">
-
-</video>
+<img src="https://media.giphy.com/media/5bnp58A4XYaiI/giphy.gif">
         
 <img src="https://noties.io/assets/images/gradient-messenger-round-2.png">
 
