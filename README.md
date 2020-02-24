@@ -16,6 +16,7 @@ This library is used to make chat effect like facebook and instagram,it can give
   myRecycler.addItemDecoration(MyDecoration(config, ViewType.LEFT,ViewType.RIGHT ,true))
 
 <h3>3. Implement DecViewHolder to your viewholder class</h3>
+
   class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView), DecViewHolder { 
         var text: TextView
 
